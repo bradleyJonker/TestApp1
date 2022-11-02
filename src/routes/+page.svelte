@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    let changeT = "THIS IS MY FIRST APP";
+    function chngeText(){
+        changeT = "I CHANGED THE TEXT";
+    }
+</script>
+<h1>{changeT}</h1>
+<button on:click={chngeText}>Change text</button>
